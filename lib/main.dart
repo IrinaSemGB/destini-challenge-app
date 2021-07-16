@@ -3,7 +3,7 @@ import 'story-brain.dart';
 
 void main() => runApp(Destini());
 
-StoryBrain data = StoryBrain();
+StoryBrain storyData = StoryBrain();
 
 class Destini extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 12,
                 child: Center(
                   child: Text(
-                    data.getStoryTitle(),
+                    storyData.getStoryTitle(),
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 25.0,
@@ -56,7 +56,7 @@ class _StoryPageState extends State<StoryPage> {
 
                   },
                   child: Text(
-                    'Choice 1',
+                    storyData.getChoice1(),
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,
@@ -75,7 +75,7 @@ class _StoryPageState extends State<StoryPage> {
 
                   },
                   child: Text(
-                    'Choice 2',
+                    storyData.getChoice2(),
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.white,
