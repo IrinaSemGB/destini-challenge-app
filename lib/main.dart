@@ -53,7 +53,7 @@ class _StoryPageState extends State<StoryPage> {
                 child: TextButton(
                   style: TextButton.styleFrom(backgroundColor: Colors.red),
                   onPressed: () {
-
+                    storyData.nextStory(1);
                   },
                   child: Text(
                     storyData.getChoice1(),
@@ -72,7 +72,7 @@ class _StoryPageState extends State<StoryPage> {
                 child: TextButton(
                   style: TextButton.styleFrom(backgroundColor: Colors.blue),
                   onPressed: () {
-
+                    storyData.nextStory(2);
                   },
                   child: Text(
                     storyData.getChoice2(),
