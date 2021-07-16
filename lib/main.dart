@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'story-brain.dart';
 
 void main() => runApp(Destini());
+
+StoryBrain data = StoryBrain();
 
 class Destini extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -16,6 +19,7 @@ class StoryPage extends StatefulWidget {
 }
 
 class _StoryPageState extends State<StoryPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,8 +39,10 @@ class _StoryPageState extends State<StoryPage> {
               Expanded(
                 flex: 12,
                 child: Center(
-                  child: Text('Story text will go here.',
+                  child: Text(
+                    data.getStoryTitle(),
                     style: TextStyle(
+                      color: Colors.white,
                       fontSize: 25.0,
                     ),
                   ),
